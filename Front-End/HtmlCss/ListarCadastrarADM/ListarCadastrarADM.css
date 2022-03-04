@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 10vw;
+}
+
+header{
+    height: 80px;
+    background-color: #4DC0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+}
+
+main{
+    height: 840px;
+    background-color: #FFFFFF;
+}
+
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    height: 125px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;    
+}
+
+.linha{
+    background-color: #000000;
+    width: 180px;
+    height: 5px;
+    margin-top: 10px;
+}
+
+.centralizar_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloco_1{
+    display: flex;
+    flex-direction: column;
+    background-color: #488EF7;
+    width: 550px;
+    height: 670px;
+    border-radius: 10px;
+    border-color: #4547ED;
+    border-style: solid;
+    border-width: 2px
+}
+
+.alinhar{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #FFFFFF;
+}
+
+.alinhar h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.alinhar p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.alinhar_2{
+    height: 50px;
+    padding: 50px 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.quadrado{
+    width: 25px;
+    height: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco_2{
+    background-color: #488EF7;
+    width: 550px;
+    height: 670px;
+    border-radius: 10px;
+    border-color: #4547ED;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.alinhar_botoes{
+    margin-top: 30px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alinhar_botoes input{
+    width: 320px;
+    height: 40px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.alinhar_botoes button{
+    width: 320px;
+    height: 60px;
+    color: black;
+    background-color: #1FF294;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1AA455;
+    border-radius: 10px;
+    font-size: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+footer{
+    height: 60px;
+    background-color: #4DC0E0;
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

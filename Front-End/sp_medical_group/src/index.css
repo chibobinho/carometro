@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex {
+    width: 100vw;
+    display: flex;
+}
+
+.banner-login {
+    background-image: url(./assets/Imagem_banner_login.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.caixa-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.caixa-login img {
+    width: 150px;
+    height: 140px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login input {
+    width: 360px;
+    height: 50px;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    ;
+    font-size: 14px;
+}
+
+.form-login a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.form-login button {
+    width: 360px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #1FF294;
+    border: #1AA455 4px solid;
+}
+
+.form-senha{
+    width: 160px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-senha img{
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    padding: 0 10vw;
+}
+
+header {
+    display: flex;
+    background: #4DC0E0;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header * {
+    margin: 15px 0;
+}
+
+header img {
+    height: 45px;
+}
+
+header a, button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+header nav button {
+    width: 126px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+#logar {
+    background-color: #1FF294;
+    border: #1AA455 4px solid;
+}
+
+#deslogar {
+    background-color: #FFDEDE;
+    border: #DF7070 4px solid;
+}
+
+.banner-home {
+    height: 617px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-home div {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px 50px;
+    border: solid 4px #4DC0E0;
+    border-radius: 10px;
+}
+
+.banner-home img {
+    width: 100px;
+}
+
+.banner-home span {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+footer {
+    background: #4DC0E0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.main-consultas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-consultas h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.main-consultas hr {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.consultas-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.consultas-section-pac {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.consultas-section section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 520px;
+    height: fit-content;
+    background-color: #488EF7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+}
+
+.consultas-section button{
+    width: 75x;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1FF294;
+    border: #1AA455 3px solid;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    width: 390px;
+}
+
+.cadastrar article{
+    height: 100px;
+}
+
+article img {
+    width: 40px;
+    height: 40px;
+}
+
+.nomes-consulta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomes-div {
+    margin-left: 10px;
+}
+
+.nomes-div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+.nomes-div span {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+}
+
+article button {
+    width: 64px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.hora-consulta {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hora-consulta p {
+    font-size: 24px;
+}
+
+.hora-consulta span {
+    font-size: 14px;
+}
+
+main nav {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.nav-page {
+    height: 24px;
+    width: 24px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+}
+
+#last-arrow {
+    transform: scale(-1, 1);
+}
+
+.cadastrar h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.cadastrar hr {
+    border-top: 1px solid black;
+    width: 120px;
+}
+
+.cadastrar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastrar input, select {
+    width: 330px;
+    height: 35px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.submit-cadastrar {
+    width: 360px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
