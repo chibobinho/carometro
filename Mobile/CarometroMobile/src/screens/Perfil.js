@@ -39,10 +39,10 @@ export default class Perfil extends Component {
         switch (role) {
             case 'ADM':
                 return 'Administrador';
-        
+
             case 'MED':
                 return 'Médico';
-            
+
             default:
                 return 'Paciente'
         }
@@ -55,14 +55,15 @@ export default class Perfil extends Component {
     render() {
         return (
             <View style={styles.Perfil}>
-                
+
                 <Image style={styles.perfilImg} source={require('../../assets/img/bg-cracha.png')} />
 
                 <View style={styles.perfilInfo}>
 
+                    <Image style={styles.crachaImg} source={require('../../assets/img/chiboImagem.png')} />
                     <Text style={styles.username}>{this.state.username}</Text>
                     <Text style={styles.role}>{this.tipoUsuario(this.state.role)}</Text>
-                    <View >
+                    <View>
                         <Text style={styles.email}>{this.state.email}</Text>
                     </View>
 
@@ -81,16 +82,23 @@ const styles = StyleSheet.create({
     },
 
     perfilInfo: {
+        marginTop: 100,
+        display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        height: 200,
+        justifyContent: 'flex-start',
+        height: 400,
     },
 
     perfilImg: {
         width: 309,
-        // height: 267,
         height: 467,
+        marginTop: 80,
+    },
+
+    crachaImg: {
+        width: 150,
+        height: 175,
         marginTop: 80,
     },
 
@@ -107,25 +115,12 @@ const styles = StyleSheet.create({
         fontSize: 18,
         // marginBottom: -505,
     },
-    
+
     email: {
         color: '#000000',
         fontFamily: 'SourceCodePro-Regular',
         fontSize: 16,
-        marginBottom: -1005,
+        marginTop: 10,
+        marginBottom: -605,
     },
-
-    emailIcon: {
-        width: 30,
-        height: 30,
-        marginRight: 10,
-    },
-
-    emailBox: {
-        height: 100,
-        flexDirection: 'column',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        
-    }
 });

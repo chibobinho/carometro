@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gBrPxLcQyrBsfFpw5IPc7VKVNT/CTC9VNJI1yVdKzc8JXBiqWaSfIK+2Ql9XpGNJp4bEnc9FQLbKJkRW6td/Fw==",
+  "dgSpecHash": "A5doN1KU16SZH7pttu58UOSpheEd6baaVAmovtEYc2gGvCCQkfUPK3cvHu7dvxG1sXVinRTgYT/RPsjH0u373w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\SpMedicalGroup\\Back-End\\senai_spmedgroup_webAPI\\senai_spmedgroup_webAPI\\senai_spmedgroup_webAPI.csproj",
+  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Carometro\\Back-End\\senai_spmedgroup_webAPI\\senai_spmedgroup_webAPI\\senai_spmedgroup_webAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pichau\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

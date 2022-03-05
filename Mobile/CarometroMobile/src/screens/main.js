@@ -18,6 +18,7 @@ const bottomTab = createBottomTabNavigator();
 
 import Perfil from './Perfil'
 import Consultas from './Consultas'
+import Login from './login';
 
 export default class Main extends Component {
     render() {
@@ -35,10 +36,18 @@ export default class Main extends Component {
                                         />
                                     )
                                 }
-                                if (route.name === 'Consultas') {
+                                // if (route.name === 'Consultas') {
+                                //     return (
+                                //         <Image
+                                //             source={require('../../assets/img/verificacao-de-lista.png')}
+                                //             style={styles.tabBarIcon}
+                                //         />
+                                //     )
+                                // }
+                                if (route.name === 'Login') {
                                     return (
                                         <Image
-                                            source={require('../../assets/img/verificacao-de-lista.png')}
+                                            source={require('../../assets/img/sign-out-free-icon-font.png')}
                                             style={styles.tabBarIcon}
                                         />
                                     )
@@ -47,7 +56,7 @@ export default class Main extends Component {
 
                             headerShown: false,
                             tabBarShowLabel: false,
-                            tabBarActiveBackgroundColor: '#488EF7',
+                            tabBarActiveBackgroundColor: '#C65454',
                             tabBarInactiveBackgroundColor: '#000000',
                             tabBarStyle: {
                                 height: 60,
@@ -59,7 +68,7 @@ export default class Main extends Component {
                         })}
                     >
                         <bottomTab.Screen name="Perfil" component={Perfil} />
-                        <bottomTab.Screen name="Consultas" component={Consultas} />
+                        <bottomTab.Screen name="Login" component={Login} />
                     </bottomTab.Navigator>
             </View>
         )

@@ -104,7 +104,8 @@ const styles = StyleSheet.create({
         height: 40,
         marginTop: 45,
         paddingLeft: 20,
-        fontfamily: 'Marvel',
+        paddingTop: 0,
+        fontFamily: 'SourceCodePro-Regular',
         fontSize: 20,
         borderRadius: 10,
         backgroundColor: '#C65454'
@@ -121,7 +122,7 @@ const styles = StyleSheet.create({
     },
 
     btnLoginText: {
-        fontFamily: 'Roboto-mono',
+        fontFamily: 'SourceCodePro-Regular',
         fontSize: 24,
         color: '#000000',
     }
