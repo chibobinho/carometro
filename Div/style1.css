@@ -98,13 +98,13 @@ h2 {
     color: #000000;
 }
 
-.cards-aluno-menu{
+.cards-aluno-menu {
     width: 1240;
     display: flex;
     justify-content: space-between;
 }
 
-.card-aluno-menu{
+.card-aluno-menu {
     width: 200px;
     display: flex;
     justify-content: space-around;
@@ -116,4 +116,91 @@ h2 {
     width: 568px;
     height: 429px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-listar {
+    margin-top: 34px;
+    background-color: #FFAA97;
+    width: 568px;
+    height: 346px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-alterar-input-img {
+    width: 464px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-alterar-inputs {
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-alterar-imagem {
+    width: 150px;
+    height: 175px;
+}
+
+input {
+    width: 277px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.58);
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+
+button {
+    width: 200px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.58);
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card-alterar-texto {
+    width: 265px;
+    display: flex;
+    justify-content: start;
+    font-family: Mohave;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.card-alterar-textos {
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-alterar-texto-excluir {
+    width: 430px;
+    display: flex;
+    justify-content: start;
+    font-family: Mohave;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
 }
