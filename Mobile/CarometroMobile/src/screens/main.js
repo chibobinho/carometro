@@ -19,6 +19,7 @@ const bottomTab = createBottomTabNavigator();
 import Perfil from './Perfil'
 import Consultas from './Consultas'
 import Login from './login';
+import Logout from './Logout'
 
 export default class Main extends Component {
     render() {
@@ -44,7 +45,15 @@ export default class Main extends Component {
                                 //         />
                                 //     )
                                 // }
-                                if (route.name === 'Login') {
+                                // if (route.name === 'Login') {
+                                //     return (
+                                //         <Image
+                                //             source={require('../../assets/img/sign-out-free-icon-font.png')}
+                                //             style={styles.tabBarIcon}
+                                //         />
+                                //     )
+                                // }
+                                if (route.name === 'Logout') {
                                     return (
                                         <Image
                                             source={require('../../assets/img/sign-out-free-icon-font.png')}
@@ -68,7 +77,7 @@ export default class Main extends Component {
                         })}
                     >
                         <bottomTab.Screen name="Perfil" component={Perfil} />
-                        <bottomTab.Screen name="Login" component={Login} />
+                        <bottomTab.Screen name="Logout" component={Logout} />
                     </bottomTab.Navigator>
             </View>
         )

@@ -55,20 +55,28 @@ export default class Perfil extends Component {
     render() {
         return (
             <View style={styles.Perfil}>
-
                 <Image style={styles.perfilImg} source={require('../../assets/img/bg-cracha.png')} />
 
                 <View style={styles.perfilInfo}>
 
-                    <Image style={styles.crachaImg} source={require('../../assets/img/chiboImagem.png')} />
-                    <Text style={styles.username}>{this.state.username}</Text>
-                    <Text style={styles.role}>{this.tipoUsuario(this.state.role)}</Text>
-                    <View>
-                        <Text style={styles.email}>{this.state.email}</Text>
-                    </View>
+                    {/* NAO SEI PQ ISSO TA AQ, É GAMBIARRA MAS ESTA FUNCIONANDO. */}
+                    <Text style={styles.username}></Text>
+                    <Text style={styles.role}></Text>
 
+                    <View style={styles.div}> 
+                        <Image style={styles.crachaImg} source={require('../../assets/img/chiboImagem.png')} />
+                        <Text >{this.state.username}</Text>
+                        <Text style={styles.role}>{this.tipoUsuario(this.state.role)}</Text>
+                    </View>
+                    <Text style={styles.email}>{this.state.email}</Text>
                 </View>
 
+                <TouchableOpacity
+                    style={styles.btnToken}
+                    onPress={this.realizarLogin}>
+                    <Text style={styles.btnTokenText}>Validar</Text>
+                </TouchableOpacity>
+                <Text style={styles.email}>Aqui vai ser o texto gerado após apertar o botão</Text>
             </View>
         )
     }
@@ -81,39 +89,48 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff'
     },
 
+    // css do background de cracha
+    perfilImg: {
+        width: 309,
+        height: 467,
+        marginTop: 30,
+    },
+
+    // css da imagem do usuario
+    crachaImg: {
+        width: 150,
+        height: 175,
+        marginTop: 110,
+    },
+
     perfilInfo: {
-        marginTop: 100,
+        width: 309,
+        height: 467,
+        marginTop: 10,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        height: 400,
     },
 
-    perfilImg: {
-        width: 309,
-        height: 467,
-        marginTop: 80,
-    },
-
-    crachaImg: {
-        width: 150,
-        height: 175,
-        marginTop: 80,
+    div: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
     },
 
     username: {
         color: '#000000',
         fontFamily: 'SourceCodePro-Bold',
         fontSize: 24,
-        marginBottom: -505,
+        marginBottom: -500,
     },
 
     role: {
         color: '#000000',
         fontFamily: 'SourceCodePro-Regular',
         fontSize: 18,
-        // marginBottom: -505,
     },
 
     email: {
@@ -123,4 +140,20 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: -605,
     },
+
+    btnToken: {
+        width: 127,
+        height: 40,
+        backgroundColor: '#D94646',
+        borderRadius: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: -465,
+    },
+
+    btnTokenText: {
+        fontFamily: 'SourceCodePro-Regular',
+        fontSize: 24,
+        color: '#000000',
+    }
 });
