@@ -204,3 +204,51 @@ button {
     line-height: 33px;
     color: #000000;
 }
+
+.box-cadastro{
+    background-color: #FFAA97;
+    width: 820px;
+    height: 672px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-cadastro-inputs{
+    height: 672px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-cadastro-imagem{
+    height: 672px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-cadastro-img {
+    width: 125px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-cadastro{
+    width: 316px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.input-imagem{
+    width: 150px;
+    height: 55px;
+}
+
+.botao-cadastro{
+    width: 150px;
+    height: 55px;
+}
