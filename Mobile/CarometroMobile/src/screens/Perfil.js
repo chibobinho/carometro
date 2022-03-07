@@ -19,37 +19,39 @@ export default class Perfil extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
+            listaAluno: [],
             role: '',
             email: '',
         };
     }
 
-    buscarDadosPerfil = async () => {
-        const valorToken = await AsyncStorage.getItem('userToken')
+    // buscarDadosAluno = async () => {
+    // try{
+    //     const token = await AsyncStorage.getItem('userToken');
+    //         const resposta = await api.get('/alunos/minha', {
+    //             headers: {
+    //                 Authorization: 'Bearer ' + token,
+    //             },
+    //         });
+           
+    //             if (resposta.status === 200) {
+    //                 const dadosApi = resposta.data
+    //                 this.setState({ listaAluno: resposta.data });
+    //             }
+            
+    //         }
+    //         // caso ocorra algum erro, exibe no console do navegador este erro
+    //         catch(error) {
+    //             // console.warn(error);
+    //         };
+    // };
 
-        if (valorToken != null) {
-            this.setState({ email: jwtDecode(valorToken).email });
-            this.setState({ username: jwtDecode(valorToken).username });
-            this.setState({ role: jwtDecode(valorToken).role });
-        }
-    }
+    
 
-    tipoUsuario(role) {
-        switch (role) {
-            case 'ADM':
-                return 'Administrador';
-
-            case 'MED':
-                return 'Médico';
-
-            default:
-                return 'Paciente'
-        }
-    }
+    
 
     async componentDidMount() {
-        this.buscarDadosPerfil()
+        this.buscarDadosPerfil();
     }
 
     render() {
@@ -65,10 +67,12 @@ export default class Perfil extends Component {
 
                     <View style={styles.div}> 
                         <Image style={styles.crachaImg} source={require('../../assets/img/chiboImagem.png')} />
-                        <Text >{this.state.username}</Text>
-                        <Text style={styles.role}>{this.tipoUsuario(this.state.role)}</Text>
+                        <Text ></Text>
+                        <Text style={styles.role}>Yuri Chiba</Text>
                     </View>
-                    <Text style={styles.email}>{this.state.email}</Text>
+                    <Text style={styles.email}>ALUNO</Text>
+                    <Text style={styles.email2}>manha</Text>
+                    <Text style={styles.username}>Manhã</Text>
                 </View>
 
                 <TouchableOpacity
@@ -76,7 +80,7 @@ export default class Perfil extends Component {
                     onPress={this.realizarLogin}>
                     <Text style={styles.btnTokenText}>Validar</Text>
                 </TouchableOpacity>
-                <Text style={styles.email}>Aqui vai ser o texto gerado após apertar o botão</Text>
+                <Text style={styles.email}></Text>
             </View>
         )
     }
@@ -139,6 +143,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginTop: 10,
         marginBottom: -605,
+    },
+
+    email2: {
+        color: '#000000',
+        fontFamily: 'SourceCodePro-Regular',
+        fontSize: 16,
+        marginTop: 10,
+        marginBottom: -625,
     },
 
     btnToken: {

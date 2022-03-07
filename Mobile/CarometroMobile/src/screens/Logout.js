@@ -18,29 +18,17 @@ import api from '../services/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
-export default class Login extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: 'pedro.gueiros@outlook.com',
-            senha: '777',
-        };
-    }
+export default class Logout extends Component {
+
 
     realizarLogout = async () => {
         try {
-            const resposta = await api.post('/login', {
-                email: this.state.email,
-                senha: this.state.senha,
-            });
+            await AsyncStorage.removeItem('userToken');
 
-            const token = resposta.data.token;
-            await AsyncStorage.setItem('userToken', token);
-
-            if (resposta.status == 200) {
-                this.props.navigation.navigate('Main');
+  
+                this.props.navigation.navigate('Login');
                 console.warn('Logout realizado!');
-            }
+            
         } catch {
             console.warn('Logout não foi possivel.')
         }
